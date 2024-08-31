@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    --background-color-theme: #181848;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+	
+	body{
+		height: 100vh;
+	}
+    
+    header {
+    background-color: var(--background-color-theme);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    }
+    
+    #boxPesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    }
+    
+    #boxLupinha {
+    border-collapse: collapse;
+    }
+    
+    #pesquisaInput {
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    }
+    
+    #lupinha {
+    margin-left: 5px;
+    background-color: var(--background-color-theme);
+    width: 25px;
+    height: 20px;
+    fill: white;
+    }
+    
+    .logoImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    }
+    
+    .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    }
+    
+    .textlogo {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+	color: white;
+    }
+    
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+    #imgPresent {
+    height: 300px;
+    width: 40%;
+    border-radius: 10px;
+    }
+    
+    #containerPresent {
+    width: 100%;
+	background-color: #7890a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    #containerContent {
+    padding: 30px;
+	height: 72.3vh;
+    }
+    
+    .book-card {
+    margin-top: 20px;
+    width: 250px;
+    border: 3px solid var(--background-color-theme);
+	border-radius: 7px;
+    height: 450px;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    }
+    
+    .buttons {
+    background-color: #87CEEB ;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    cursor: pointer;
+    }
+    
+	.buttons:hover{
+		background-color: #4682B4 ;
+	}
+    #add-btn {
+    width: 300px;
+    padding: 25px;
+    }
+    
+    .cards-container {
+        display: flex;
+        justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 0px 20%;
+    }
+    
+    #container-add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #imageContainer{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgsCard{
+        width: 100%;
+        height: 100%;
+    }
+
+    #inputsContainer{
+        text-align: center;
+    }
+    
+    /* Código da Layane*/
+    
+    .tela2{
+        background-color: rgb(178, 226, 238);
+       
+    }
+    
+    .livro {
+        padding: 5px;
+        align-items: center;
+        font-weight: bold;
+        
+    }
+    
+    .editar {
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 72.3vh;
+        
+    }
+    
+    .parte1 {
+        background-color: rgb(178, 226, 238);
+        height: 60vh;
+        width: 50vh;
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-shadow: 5px 5px 5px rgb(79, 77, 77);
+    }
+    button{
+        border-radius: 10px;
+        background-color: #87CEEB ;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        transition: 0.5s;
+    }
+
+    button:hover{
+        background-color: #4682B4 ;
+    }
+    input{
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        padding: 3px;
+        text-align: center;
+    }
+    #fileImg{
+        overflow: hidden;
+        flex-wrap: wrap;    
+    }   
+
+    #imagem{
+        display: none;
+    }
+    #fileBtn{
+        display: block;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: #87CEEB ;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 10px;
+    }
+
+    #fileBtn:hover{
+        background-color: #4682B4 ;
+    }
+	
+	#backingBtn{
+		border-radius: 10px;
+		background-color: #87CEEB ;
+		padding: 10px;
+		cursor: pointer;
+		border: none;
+		transition: 0.3s;
+	}
+	
+	#backingBtn:hover{
+		background-color: #4682B4 ;
+	}
+	.enviar-form{
+		font-size: 17px;
+	}
+	.tipografia{
+		display: inline;
+	}
+	main{
+		background-color: #ADD8E6 ;
+	}
+	h2{
+		font-size: 27px;
+		margin: 5px;
+	}
+	
+	footer{
+		width: 100%;
+		height: 15vh;
+	}
+	.footerContainer{
+		height: 100%;
+		width: 100%;
+		background-color: var(--background-color-theme);
+	}
+	.titleForm{
+		margin-bottom: 40px;
+		border-bottom: 2px solid black;
+	}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="tela2" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Livros</title>
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+			<a href="/livro/">
+				<img class="logoImg" src="/medias/LogoLivro.png" alt="Logo">
+			</a>
+			<a href="/livro/">
+				<span class="textlogo">LivroLand</span>
+			</a>
+            </div>
+        </header>
+
+        <main class="editar">
+            <form th:action="@{/livro/add}" th:object="${livro}" method="post"
+                enctype="multipart/form-data">
+                <div class="parte1">
+					<div class="titleForm"> <h1 th:text="${livro.id != null} ? 'Atualize seu livro' : 'Cadastre seu livro' "> Cadastre seu livro </h1> </div>
+                    <input type="hidden" th:field="*{id}">
+                    <a id="backingBtn" href="/livro/">Voltar</a>
+
+                    <div class="livro">
+                        <h3>Título</h3>
+                        <input required th:field="*{nome}" type="text" class="input"
+                            placeholder="Título..." />
+                    </div>
+					
+					<div class="livro">
+					          <h3>Nome do Autor</h3>
+					          <input required maxlength="30" th:field="*{autor}" type="text" class="input"
+					              placeholder="Nome do Autor..." />
+					      </div>
+					
+                    <div class="livro">
+                        <h3>Página</h3>
+                        <input required th:field="*{qtdPaginas}" type="text" class="input"
+                            placeholder="Quantas páginas..." />
+
+                    </div><br>
+                    <div class="livro">
+                        <label>Imagem do livro:</label>
+                        <br>
+                        <div id="fileImg">
+                            <label for="imagem" id="fileBtn" >Escolha o arquivo</label>
+                            <input required type="file" name="imagem" id="imagem">
+                        </div>
+
+                    </div>
+                    <button
+                        th:text="${livro.id != null} ? 'Atualizar' : 'Cadastrar' "
+                        type="submit" class="enviar-form">Cadastrar</button>
+                </div>
+            </form>
+        </main>
+		
+		<footer> 
+			<div class="footerContainer logo">
+			    <p class="textLogo">Projeto realizado por Hebert, Isabella, Layane e Gabriel. @Todos os direitos reservados.</p>
+			</div>
+		</footer>
+    </body>
